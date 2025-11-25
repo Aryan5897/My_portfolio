@@ -5,19 +5,68 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon, ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+
+function parseMarkdown(text: string): React.ReactNode {
+  // Check for reference link at the end {{url}}
+  const refMatch = text.match(/\{\{([^}]+)\}\}$/);
+  const mainText = refMatch ? text.replace(/\{\{[^}]+\}\}$/, "").trim() : text;
+
+  // Split by both bold (**text**) and links ([text](url))
+  const parts = mainText.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  const elements = parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={index}>{part.slice(2, -2)}</strong>;
+    }
+    const linkMatch = part.match(/\[([^\]]+)\]\(([^)]+)\)/);
+    if (linkMatch) {
+      return (
+        <a
+          key={index}
+          href={linkMatch[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-primary"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {linkMatch[1]}
+        </a>
+      );
+    }
+    return part;
+  });
+
+  // Add reference icon if present
+  if (refMatch) {
+    elements.push(
+      <a
+        key="ref-link"
+        href={refMatch[1]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center align-baseline ml-1 text-muted-foreground hover:text-primary"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <ExternalLinkIcon className="size-3" />
+      </a>
+    );
+  }
+
+  return elements;
+}
 
 interface ResumeCardProps {
   logoUrl: string;
   altText: string;
   title: string;
-  subtitle?: string;
+  subtitle?: string | React.ReactNode;
   href?: string;
   badges?: readonly string[];
   period: string;
-  description?: string;
+  description?: string | readonly string[];
+  initialExpanded?: boolean;
 }
 export const ResumeCard = ({
   logoUrl,
@@ -28,8 +77,9 @@ export const ResumeCard = ({
   badges,
   period,
   description,
+  initialExpanded = false,
 }: ResumeCardProps) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [isExpanded, setIsExpanded] = React.useState(initialExpanded);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
@@ -100,7 +150,15 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              {description}
+              {Array.isArray(description) ? (
+                <ul className="list-disc list-outside ml-4 space-y-1">
+                  {description.map((item, index) => (
+                    <li key={index}>{parseMarkdown(item)}</li>
+                  ))}
+                </ul>
+              ) : (
+                description
+              )}
             </motion.div>
           )}
         </div>

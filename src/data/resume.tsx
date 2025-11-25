@@ -1,68 +1,182 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+  name: "Saiteja Bommena",
+  initials: "SB",
+  url: "https://saiteja.vercel.com",
+  location: "Hyderabad, India",
+  locationLink: "https://www.google.com/maps/place/hyderabad",
+  description: [
+    "Full Stack & AI/ML Specialist.",
+    "I love building things and helping people.",
+  ],
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "Software Engineer with 3+ years of experience in Python, Node.js, and full-stack development. Proven expertise in building scalable systems, optimizing performance, and implementing AI/ML solutions. Strong background in system design, debugging complex issues, and cross-functional collaboration. Passionate about leveraging cutting-edge technology to solve challenging problems.",
   avatarUrl: "/me.png",
-  skills: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
-  ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-  ],
+  skills: {
+    "Programming Languages": [
+      "Python",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Java",
+      "C++",
+      "SQL",
+      "HTML5",
+      "CSS3",
+    ],
+    "Frontend Development": [
+      "React.js",
+      "Next.js",
+      "Vue.js",
+      "Redux",
+      "Redux Toolkit",
+      "Context API",
+      "Tailwind CSS",
+      "Material-UI",
+      "Bootstrap",
+      "Styled Components",
+      "SASS",
+      "Zustand",
+      "React Query",
+      "Webpack",
+      "Vite",
+    ],
+    "Backend Development": [
+      "Node.js",
+      "Express.js",
+      "Django",
+      "FastAPI",
+      "Flask",
+      "NestJS",
+      "RESTful APIs",
+      "GraphQL",
+      "WebSockets",
+      "Socket.io",
+      "gRPC",
+      "Swagger/OpenAPI",
+      "JWT",
+      "OAuth 2.0",
+      "Passport.js",
+      "NextAuth",
+    ],
+    "Databases & Data Management": [
+      "PostgreSQL",
+      "MySQL",
+      "SQLite",
+      "MongoDB",
+      "DynamoDB",
+      "Firebase Firestore",
+      "Redis",
+      "Prisma",
+      "Sequelize",
+      "Mongoose",
+      "SQLAlchemy",
+      "TypeORM",
+    ],
+    "AI & Machine Learning": [
+      "OpenAI GPT",
+      "Anthropic Claude",
+      "LangChain",
+      "Prompt Engineering",
+      "TensorFlow",
+      "PyTorch",
+      "Keras",
+      "Hugging Face",
+      "Neural Networks",
+      "CNNs",
+      "GANs",
+      "DCGAN",
+      "DFGAN",
+      "SAGAN",
+      "OpenCV",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "NLP",
+      "RLHF",
+    ],
+    "Cloud & DevOps": [
+      "AWS Lambda",
+      "EC2",
+      "S3",
+      "RDS",
+      "DynamoDB",
+      "CloudWatch",
+      "API Gateway",
+      "Docker",
+      "Docker Compose",
+      "Kubernetes",
+      "GitHub Actions",
+      "Jenkins",
+      "GitLab CI",
+      "Git",
+      "Vercel",
+      "Netlify",
+      "Grafana",
+      "Sentry",
+    ],
+    "Testing & Quality": [
+      "Jest",
+      "Mocha",
+      "Pytest",
+      "React Testing Library",
+      "Cypress",
+      "Selenium",
+      "Playwright",
+      "ESLint",
+      "Prettier",
+      "SonarQube",
+      "TDD",
+      "BDD",
+    ],
+    "Tools & Technologies": [
+      "VS Code",
+      "Postman",
+      "DBeaver",
+      "Slack API",
+      "Stripe API",
+      "Voiceflow",
+      "Nginx",
+      "PM2",
+      "Jira",
+      "Notion",
+    ],
+    "Core Competencies": [
+      "Full-Stack Architecture",
+      "System Design",
+      "Microservices",
+      "Performance Optimization",
+      "Data Structures & Algorithms",
+      "OOP",
+      "Design Patterns",
+      "Agile/Scrum",
+      "Technical Leadership",
+      "Code Review",
+    ],
+  },
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "saiteja21.dev@gmail.com",
+    tel: "+919553165227",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/Bommenasaiteja",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/saiteja-bommena",
         icon: Icons.linkedin,
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:saiteja21.dev@gmail.com",
         icon: Icons.email,
 
         navbar: false,
@@ -72,619 +186,333 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "Fabzen Technologies Private Limited",
+      href: "https://cloudzenia.com",
+      badges: [],
+      location: "Bengaluru, Karnataka, India",
+      title: "Full Stack Developer",
+      logoUrl: "/fabzen.avif",
+      start: "May 2024",
+      end: "Present",
+      description: [
+        "Architected microservices-based contest platform using **NestJS** and **TypeScript**, successfully handling **10,000+ concurrent users** with **99.9% uptime** and seamless scalability",
+        "Integrated multiple payment gateway solutions (**A-Pay, Juspay, Cashfree**) with robust error handling and transaction management, ensuring secure payment processing across platforms",
+        "Developed **AI-powered Slack bot** for automated website management, enabling natural language-driven content updates, page creation, and code analysis across multiple sites, reducing maintenance overhead by **80%**",
+        "Led team of **3 developers** to deliver and maintain **10+ production websites**, establishing standardized development workflows and quality assurance processes",
+        "Built dual-purpose internal monitoring dashboards: **React-NestJS-MongoDB** stack for real-time application metrics and **Python-Dash-MongoDB** solution for business analytics, eliminating dependency on third-party tools and reducing operational costs",
+        "Engineered company website ([cloudzenia.com](https://cloudzenia.com)) with **Next.js**, implementing advanced optimization techniques that improved load times by **40%** {{https://cloudzenia.com}}",
+        "Implemented enterprise security features including **Duo Auth two-factor authentication** and conducted comprehensive performance optimization and bottleneck analysis across multiple applications",
+      ],
+    },
+    {
+      company: "Freelance Developer",
+      href: "",
       badges: [],
       location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
-      description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+      title: "Freelance Developer",
+      logoUrl: "/freelance.png",
+      start: "August 2022",
+      end: "May 2024",
+      description: [
+        "Engineered [Presentix.ai](https://presentix.ai), an AI-powered presentation generator leveraging **Large Language Models** to automatically create professional PowerPoint presentations from diverse input sources (text, documents, URLs), reducing presentation creation time by **70%** {{https://presentix.ai}}",
+        "Architected and deployed [MyHoneyCare.com](https://myhoneycare.com), a full-stack wellness platform for senior care services using **NestJS**, **Tailwind CSS**, and **Airtable** integration for lead management, deployed on **Vercel** with optimized performance and SEO {{https://myhoneycare.com}}",
+        "Developed [SimplyMoneyTools.com](https://simplymoneytools.com), a comprehensive financial calculator suite using **WordPress** and custom **PHP**, featuring loan calculators, budget planners, and investment growth tools, deployed on **SiteGround** with **99.9% uptime** {{https://simplymoneytools.com}}",
+        "Built enterprise-grade global web scraper to aggregate **IKEA 3D furniture models** and product information across **20+ countries**, automating data collection for thousands of products and enabling efficient multi-market analysis",
+        "Designed complete backend architecture for **BudFit** application using **Python FastAPI** and **MongoDB**, implementing RESTful APIs with comprehensive **Swagger documentation** for seamless frontend integration",
+        "Created AI-powered hotel booking chatbot using **Voiceflow** with natural language processing capabilities, automating reservation workflows and improving customer engagement by **35%** while reducing response time by **60%**",
+      ],
     },
     {
-      company: "Shopify",
+      company: "Soul AI, AI Whisperers Technologies",
+      href: "",
       badges: [],
-      href: "https://shopify.com",
       location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    },
-    {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
-      badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+      title: "AI and LLM Trainer",
+      logoUrl: "/soulAI.jpg",
+      start: "October 2023",
+      end: "November 2023",
+      description: [
+        "Engineered state-of-the-art Large Language Models (LLMs) to enhance their capabilities",
+        "Leveraged domain expertise in Reinforcement Learning from Human Feedback (RLHF) to optimize AI models",
+        "Crafted technical content and documentation for AI systems",
+      ],
     },
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
+      school: "Vellore Institute of Technology (VIT)",
+      href: "https://vit.ac.in/",
+      degree: "Master of Computer Applications (MCA), Information Technology",
+      logoUrl: "/VIT.png",
+      start: "2021",
+      end: "2023",
+      score: "CGPA: 9.0/10.0",
     },
     {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
+      school: "Nizam College, Osmania University (OU)",
+      href: "https://www.osmania.ac.in/",
+      degree: "Bachelor of Computer Applications (BCA), Information Technology",
+      logoUrl: "/OU.jpg",
+      start: "2017",
+      end: "2020",
+      score: "CGPA: 8.22/10.0",
     },
     {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
+      school: "Kshatriya Junior College",
+      href: "",
+      degree: "Math, Physics and Chemistry (MPC)",
+      logoUrl: "/kjc.avif",
+      start: "2015",
+      end: "2017",
+      score: "96.8%",
     },
   ],
+  frontendProjects: [
+    {
+      name: "Fabzen Technologies",
+      url: "https://fabzentech.com",
+    },
+    {
+      name: "Cloudzenia",
+      url: "https://cloudzenia.com",
+    },
+    {
+      name: "MyHoneyCare",
+      url: "https://myhoneycare.com",
+    },
+    {
+      name: "Simply Money Tools",
+      url: "https://simplymoneytools.com",
+    },
+  ],
+  currentlyWorkingOn: {
+    title: "AI Arena",
+    description: "A CLI tool that runs multiple AI coding assistants (Claude Code, Gemini CLI, Aider, OpenAI CLI, Qwen) simultaneously in parallel, displays their responses in real-time in a split-screen terminal UI, and allows you to select the best response or continue chatting with the winner.",
+    highlights: [
+      "Run multiple AI CLI tools in parallel with real-time streaming output",
+      "Split-screen terminal UI for comparing responses side-by-side",
+      "Automatic detection of installed CLI tools",
+      "Select the best response and continue the conversation with the winner",
+      "Support for Claude Code, Gemini CLI, Aider, OpenAI CLI, and Qwen",
+    ],
+    technologies: ["Node.js", "CLI", "AI", "Terminal UI", "Process Management"],
+    github: "https://github.com/Bommenasaiteja/ai-arena",
+    status: "In Development",
+  },
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "SEO Slack Bot",
+      href: "https://github.com/Bommenasaiteja",
+      dates: "2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "AI-powered Slack bot that automates SEO research and reporting using OpenAI GPT-4o, web crawling with Playwright, and smart analysis.",
+      detailedDescription:
+        "An intelligent Slack bot that revolutionizes SEO workflow by automating website analysis and reporting. The bot leverages OpenAI GPT-4o for sophisticated content analysis, Playwright for robust web crawling, and Celery with Redis for efficient background job processing. It features automated sitemap parsing, AI-driven keyword extraction, meta tag optimization suggestions, content quality assessment, and comprehensive technical SEO evaluation. Results are exported to CSV and Google Sheets with formatted reports, making it easy for teams to track and improve their SEO performance.",
+      features: [
+        "Automated website crawling and sitemap parsing with Playwright",
+        "AI-powered keyword extraction and semantic analysis using OpenAI GPT-4o",
+        "Meta tag optimization suggestions (title, description, headings, Open Graph)",
+        "Content quality scoring with readability assessment and structure analysis",
+        "Technical SEO evaluation with on-page and off-page metrics",
+        "Real-time progress updates and notifications in Slack threads",
+        "Multiple export formats: CSV for offline analysis and Google Sheets with formatted reports",
+        "Background job queue with Celery and Redis for handling long-running crawls",
+        "RESTful API built with FastAPI for external integrations",
+        "Docker containerization for easy deployment and scalability",
       ],
-      links: [
+      techStack: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
+          category: "Backend & API",
+          items: ["Python 3.11+", "FastAPI", "Uvicorn", "SQLAlchemy", "SQLite"],
+        },
+        {
+          category: "Messaging & Integration",
+          items: ["Slack Bolt for Python", "Slack API", "Socket Mode"],
+        },
+        {
+          category: "AI & Analysis",
+          items: ["OpenAI GPT-4o", "Prompt Engineering", "NLP"],
+        },
+        {
+          category: "Web Crawling",
+          items: ["Playwright", "BeautifulSoup4", "Sitemap Parsing"],
+        },
+        {
+          category: "Task Queue & Caching",
+          items: ["Celery", "Redis", "Background Jobs"],
+        },
+        {
+          category: "Data Export",
+          items: ["Pandas", "gspread", "Google Sheets API", "CSV"],
+        },
+        {
+          category: "DevOps",
+          items: ["Docker", "Docker Compose", "Environment Configuration"],
         },
       ],
+      technologies: [
+        "Python",
+        "Slack Bolt",
+        "OpenAI GPT-4o",
+        "Playwright",
+        "BeautifulSoup4",
+        "Celery",
+        "Redis",
+        "FastAPI",
+        "SQLAlchemy",
+        "Pandas",
+        "Docker",
+      ],
+      links: [],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      video: "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "AI Website Management Bot (Slack Integration)",
+      href: "https://github.com/Bommenasaiteja",
+      dates: "Aug 2025 - Sep 2025",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Intelligent bot for managing multiple websites through Slack with NLP for automated updates, page creation, and code analysis.",
+      detailedDescription:
+        "An enterprise-grade Slack bot that streamlines website management operations through natural language processing. This proprietary solution enables teams to manage multiple production websites directly from Slack, significantly reducing maintenance overhead by 80%. The bot understands natural language commands to update content, create new pages, analyze code quality, and perform routine maintenance tasks across different tech stacks. Built with a hybrid architecture combining Python for AI/NLP processing and Node.js/TypeScript for website interactions, it maintains high security standards while providing seamless integration with existing workflows.",
+      features: [
+        "Natural language command processing for intuitive website management",
+        "Automated content updates across multiple websites simultaneously",
+        "Dynamic page creation with template selection and content population",
+        "Code quality analysis and automated refactoring suggestions",
+        "Multi-website support with centralized configuration management",
+        "Real-time deployment tracking and rollback capabilities",
+        "Integrated error monitoring and automatic issue reporting",
+        "Team collaboration features with approval workflows for sensitive operations",
+        "Audit logging for compliance and security tracking",
+        "Reduced maintenance overhead by 80% compared to manual processes",
+      ],
+      techStack: [
+        {
+          category: "AI & NLP",
+          items: ["Python", "OpenAI GPT", "Natural Language Processing", "Intent Classification"],
+        },
+        {
+          category: "Backend & APIs",
+          items: ["Node.js", "TypeScript", "Express.js", "RESTful APIs"],
+        },
+        {
+          category: "Frontend Management",
+          items: ["Next.js", "React", "Static Site Generation"],
+        },
+        {
+          category: "Integration",
+          items: ["Slack API", "Slack Bolt", "Webhooks"],
+        },
+        {
+          category: "DevOps & Deployment",
+          items: ["Git Automation", "CI/CD Integration", "Vercel API"],
+        },
+      ],
       technologies: [
+        "Python",
+        "Node.js",
+        "TypeScript",
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Slack API",
       ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
+      links: [],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "AWS Serverless Architecture",
+      href: "https://github.com/Bommenasaiteja",
+      dates: "August 2024 - May 2025",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Serverless backend architecture for React Native app with dynamic GIF features based on user behavior and preferences.",
+      detailedDescription:
+        "A highly scalable serverless backend system built on AWS Lambda that powers a React Native mobile application with dynamic, personalized GIF recommendations. The architecture leverages AWS services to create a cost-effective, auto-scaling solution that handles user behavior tracking, preference analysis, and real-time GIF content delivery. The system processes user interactions to build behavioral profiles and serves contextually relevant GIF content, creating an engaging and personalized user experience while maintaining low operational costs through serverless computing.",
+      features: [
+        "Serverless architecture using AWS Lambda for automatic scaling and cost optimization",
+        "Real-time user behavior tracking and analytics",
+        "Machine learning-based GIF recommendation engine",
+        "Dynamic content delivery based on user preferences and context",
+        "Event-driven architecture for efficient resource utilization",
+        "API Gateway integration for secure mobile app communication",
+        "DynamoDB for fast, scalable user data storage",
+        "CloudWatch monitoring and alerting for system health",
+        "S3 integration for media asset management",
+        "Cost-effective pay-per-use pricing model with no idle server costs",
+      ],
+      techStack: [
+        {
+          category: "Cloud Services",
+          items: ["AWS Lambda", "API Gateway", "DynamoDB", "S3", "CloudWatch"],
+        },
+        {
+          category: "Backend",
+          items: ["Node.js", "Serverless Framework", "RESTful APIs"],
+        },
+        {
+          category: "Mobile",
+          items: ["React Native", "AsyncStorage", "Push Notifications"],
+        },
+        {
+          category: "Data & Analytics",
+          items: ["User Behavior Analysis", "Content Recommendation", "Event Tracking"],
+        },
+      ],
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "AWS Lambda",
+        "React Native",
+        "Node.js",
       ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
+      links: [],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video: "",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Phyllo WordPress Plugin & Custom Theme",
+      href: "https://github.com/Bommenasaiteja",
+      dates: "August 2022 - May 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Custom WordPress plugin and theme integrating Phyllo API with Airtable for seamless data management and content publishing.",
+      detailedDescription:
+        "A comprehensive WordPress solution consisting of a custom plugin and theme designed to bridge Phyllo's creator monetization platform with Airtable's collaborative database. The plugin provides seamless integration between Phyllo's API and Airtable, enabling automated data synchronization, lead management, and content workflow automation. The custom theme was built with performance optimization in mind, featuring responsive design, SEO best practices, and a modern user interface that enhances the company blog's engagement and readability. This solution streamlined the content management process and improved data accessibility for the marketing team.",
+      features: [
+        "Custom WordPress plugin for Phyllo-Airtable integration",
+        "Automated data synchronization between Phyllo API and Airtable",
+        "Real-time lead capture and management system",
+        "Custom post types and taxonomies for flexible content organization",
+        "RESTful API endpoints for external integrations",
+        "Custom WordPress theme optimized for performance and SEO",
+        "Responsive design with mobile-first approach",
+        "Advanced caching strategies for improved load times",
+        "Custom Gutenberg blocks for rich content creation",
+        "Admin dashboard for easy configuration and monitoring",
       ],
-      links: [
+      techStack: [
         {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
+          category: "CMS & Backend",
+          items: ["WordPress", "PHP", "MySQL", "Custom Plugin Development"],
+        },
+        {
+          category: "APIs & Integration",
+          items: ["Phyllo API", "Airtable API", "REST API", "Webhooks"],
+        },
+        {
+          category: "Frontend",
+          items: ["HTML5", "CSS3", "JavaScript", "jQuery", "Gutenberg"],
+        },
+        {
+          category: "Performance",
+          items: ["Caching", "Asset Optimization", "Lazy Loading", "CDN Integration"],
         },
       ],
+      technologies: ["WordPress", "PHP", "Airtable API"],
+      links: [],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
-  ],
-  hackathons: [
-    {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
-      description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
-      icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
-      links: [],
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
-      links: [
-        {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
-        },
-      ],
-    },
-    {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
-      description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
-        },
-      ],
-    },
-    {
-      title: "ETH Waterloo",
-      dates: "October 13th - 15th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
-      links: [
-        {
-          title: "Organization",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ethdocnet",
-        },
-      ],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 15th - 17th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a virtual reality application allowing users to see themselves in third person.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Streamer Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/htn2017",
-        },
-        {
-          title: "Client Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/RTSPClient",
-        },
-      ],
-    },
-    {
-      title: "Hack The 6ix",
-      dates: "August 26th - 27th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed an open platform for people shipping items to same place to combine shipping costs and save money.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ShareShip/ShareShip",
-        },
-        {
-          title: "Site",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://share-ship.herokuapp.com/",
-        },
-      ],
-    },
-    {
-      title: "Stupid Hack Toronto",
-      dates: "July 23rd, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a chrome extension which tracks which facebook profiles you have visited and immediately texts your girlfriend if you visited another girls page.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/nsagirlfriend/nsagirlfriend",
-        },
-      ],
-    },
-    {
-      title: "Global AI Hackathon - Toronto",
-      dates: "June 23rd - 25th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a python library which can be imported to any python game and change difficulty of the game based on real time emotion of player. Uses OpenCV and webcam for facial recognition, and a custom Machine Learning Model trained on a [Kaggle Emotion Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) using [Tensorflow](https://www.tensorflow.org/Tensorflow) and [Keras](https://keras.io/). This project recieved 1st place prize at the Global AI Hackathon - Toronto and was also invited to demo at [NextAI Canada](https://www.nextcanada.com/next-ai).",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/global-ai-hackathon.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://syncedreview.com/2017/06/26/global-ai-hackathon-in-toronto/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/TinySamosas/",
-        },
-      ],
-    },
-    {
-      title: "McGill AI for Social Innovation Hackathon",
-      dates: "June 17th - 18th, 2017",
-      location: "Montreal, Quebec",
-      description:
-        "Developed realtime facial microexpression analyzer using AI",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/ai-for-social-good.jpg",
-      links: [],
-    },
-    {
-      title: "Open Source Circular Economy Days Hackathon",
-      dates: "June 10th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/genecis",
-        },
-      ],
-    },
-    {
-      title: "Make School's Student App Competition 2017",
-      dates: "May 19th - 21st, 2017",
-      location: "International",
-      description: "Improved PocketDoc and submitted to online competition",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
-      win: "Top 10 Finalist | Honourable Mention",
-      links: [
-        {
-          title: "Medium Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://medium.com/make-school/the-winners-of-make-schools-student-app-competition-2017-a6b0e72f190a",
-        },
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
-        },
-      ],
-    },
-    {
-      title: "HackMining",
-      dates: "May 12th - 14th, 2017",
-      location: "Toronto, Ontario",
-      description: "Developed neural network to optimize a mining process",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
-      links: [],
-    },
-    {
-      title: "Waterloo Equithon",
-      dates: "May 5th - 7th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
-        },
-      ],
-    },
-    {
-      title: "SpaceApps Waterloo",
-      dates: "April 28th - 30th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/earthwatch",
-        },
-      ],
-    },
-    {
-      title: "MHacks 9",
-      dates: "March 24th - 26th, 2017",
-      location: "Ann Arbor, Michigan",
-      description:
-        "Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/threejs-planes",
-        },
-      ],
-    },
-    {
-      title: "StartHacks I",
-      dates: "March 4th - 5th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
-      win: "1st Place Winner",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-ionic",
-        },
-        {
-          title: "Source (Server)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-rails",
-        },
-      ],
-    },
-    {
-      title: "QHacks II",
-      dates: "February 3rd - 5th, 2017",
-      location: "Kingston, Ontario",
-      description:
-        "Developed a mobile game which enables city-wide manhunt with random lobbies",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/human-huntr-react-native",
-        },
-        {
-          title: "Source (API)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/human-huntr-rails",
-        },
-      ],
-    },
-    {
-      title: "Terrible Hacks V",
-      dates: "November 26th, 2016",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mock of Windows 11 with interesting notifications and functionality",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
-        },
-      ],
-    },
-    {
-      title: "Portal Hackathon",
-      dates: "October 29, 2016",
-      location: "Kingston, Ontario",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
-        },
-      ],
+      video: "",
     },
   ],
 } as const;
