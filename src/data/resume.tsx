@@ -195,7 +195,7 @@ export const DATA = {
       start: "May 2024",
       end: "Present",
       description: [
-        "Architected microservices-based contest platform using **NestJS** and **TypeScript**, successfully handling **10,000+ concurrent users** with **99.9% uptime** and seamless scalability",
+        "Architected microservices-based contest platform using **NestJS** and **TypeScript**, successfully handling **1,00,000+ concurrent users** with **99.9% uptime** and seamless scalability",
         "Integrated multiple payment gateway solutions (**A-Pay, Juspay, Cashfree**) with robust error handling and transaction management, ensuring secure payment processing across platforms",
         "Developed **AI-powered Slack bot** for automated website management, enabling natural language-driven content updates, page creation, and code analysis across multiple sites, reducing maintenance overhead by **80%**",
         "Led team of **3 developers** to deliver and maintain **10+ production websites**, establishing standardized development workflows and quality assurance processes",
