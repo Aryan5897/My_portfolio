@@ -103,16 +103,10 @@ export const DATA = {
     email: "aryan.productmngr98@gmail.com",
     tel: "+917004400716",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/aryankumar",
-        icon: Icons.github,
-
-        navbar: true,
-      },
+     
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/aryan_kumar",
+        url: "https://www.linkedin.com/in/aryan-kumar-87079921b/",
         icon: Icons.linkedin,
 
         navbar: true,
