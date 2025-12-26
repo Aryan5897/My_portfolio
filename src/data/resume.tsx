@@ -4,7 +4,7 @@ import { HomeIcon } from "lucide-react";
 export const DATA = {
   name: "Aryan Kumar",
   initials: "AK",
-  url: "https://aryankumar.vercel.app",
+  url: "https://aryan-product.vercel.app",
   location: "Pune, Maharashtra, India",
   locationLink: "https://www.google.com/maps/place/pune",
   description: [
@@ -134,7 +134,7 @@ export const DATA = {
       badges: [],
       location: "Pune, Maharashtra, India",
       title: "Associate Product Manager",
-      logoUrl: "/itgurus.png",
+      logoUrl: "/itguru.jpeg",
       start: "December 2023",
       end: "Present",
       description: [
@@ -152,7 +152,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Frontend Developer Intern",
-      logoUrl: "/twilearn.png",
+      logoUrl: "/twilearn_logo.jpeg",
       start: "August 2023",
       end: "October 2023",
       description: [
@@ -182,7 +182,7 @@ export const DATA = {
       badges: [],
       location: "Hazaribag, Jharkhand, India",
       title: "Web Developer",
-      logoUrl: "/ngo.png",
+      logoUrl: "/jansewa.png",
       start: "August 2020",
       end: "August 2021",
       description: [
@@ -206,7 +206,7 @@ export const DATA = {
       school: "Birla Institute of Technology (BIT)",
       href: "https://www.bitmesra.ac.in/",
       degree: "Bachelor of Computer Applications (BCA), Information Technology",
-      logoUrl: "/BIT.png",
+      logoUrl: "/BIT.jpeg",
       start: "2017",
       end: "2020",
       score: "CGPA: 7.98/10.0",
