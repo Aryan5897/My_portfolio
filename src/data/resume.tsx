@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, FileTextIcon } from "lucide-react";
 
 export const DATA = {
   name: "Aryan Kumar",
@@ -37,6 +37,16 @@ export const DATA = {
       "JIRA",
       "Confluence",
     ],
+       "Product Execution": [
+      "Agile/Scrum",
+      "Sprint Planning",
+      "User Acceptance Testing (UAT)",
+      "Release Management",
+      "Product Documentation",
+      "Client Demos & Training",
+      "Bug Triage & Prioritization",
+      "Cross-functional Collaboration",
+    ],
     "Domain Expertise": [
       "B2B SaaS Platforms",
       "HRMS Systems",
@@ -68,16 +78,6 @@ export const DATA = {
       "Data Preprocessing",
       "Model Evaluation",
     ],
-    "Product Execution": [
-      "Agile/Scrum",
-      "Sprint Planning",
-      "User Acceptance Testing (UAT)",
-      "Release Management",
-      "Product Documentation",
-      "Client Demos & Training",
-      "Bug Triage & Prioritization",
-      "Cross-functional Collaboration",
-    ],
     "Development Tools": [
       "Git & Version Control",
       "VS Code",
@@ -98,7 +98,10 @@ export const DATA = {
       "Conflict Resolution",
     ],
   },
-  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "https://case-studies-blogs.vercel.app/", icon: FileTextIcon, label: "Case Studies" },
+  ],
   contact: {
     email: "aryan.productmngr98@gmail.com",
     tel: "+917004400716",
@@ -207,6 +210,242 @@ export const DATA = {
     },
   ],
   frontendProjects: [],
+  caseStudies: [
+    {
+      title: "Agent.ai: Autonomous AI Agents That Execute Complex Workflows",
+      href: "https://case-studies-blogs.vercel.app/blog/agentai-autonomous-workflows",
+      dates: "December 27, 2024",
+      active: true,
+      description:
+        "How Agent.ai enables truly autonomous AI agents that can plan, execute, and adapt multi-step workflows without human intervention",
+      detailedDescription:
+        "Analysis of Agent.ai's approach to creating autonomous AI agents that can execute complex workflows. This case study explores how the platform enables AI agents to plan, execute, and adapt multi-step workflows without human intervention, revolutionizing automation across various industries.",
+      features: [
+        "Autonomous workflow execution",
+        "Multi-step planning capabilities",
+        "Adaptive learning mechanisms",
+        "Human-in-the-loop safety protocols",
+        "Industry-agnostic application framework",
+      ],
+      techStack: [
+        {
+          category: "AI & ML",
+          items: ["Autonomous Agents", "Machine Learning", "Natural Language Processing"],
+        },
+        {
+          category: "Platform Architecture",
+          items: ["Workflow Engine", "API Integration", "Safety Protocols"],
+        },
+      ],
+      technologies: [
+        "AI Agents",
+        "Machine Learning",
+        "Natural Language Processing",
+        "Workflow Automation",
+        "API Integration",
+      ],
+      links: [
+        { type: "Website", href: "https://case-studies-blogs.vercel.app/blog/agentai-autonomous-workflows" },
+      ],
+      image: "/agentai-workflows.webp",
+      video: "",
+    },
+    {
+      title: "Airbnb's Booking Conversion Optimization: Building Trust in a High-Risk Decision",
+      href: "https://case-studies-blogs.vercel.app/blog/airbnb-booking-conversion",
+      dates: "December 27, 2024",
+      active: true,
+      description:
+        "How Airbnb transformed search-to-booking conversion through trust signals, transparency, and friction reduction",
+      detailedDescription:
+        "Deep dive into Airbnb's conversion optimization strategy, focusing on how the company addressed the high-risk nature of booking accommodations. This case study examines the implementation of trust signals, transparent communication, and friction reduction techniques that significantly improved booking conversion rates.",
+      features: [
+        "Trust signal implementation",
+        "Transparent pricing strategies",
+        "Friction reduction in booking flow",
+        "User-generated content integration",
+        "Dynamic personalization algorithms",
+      ],
+      techStack: [
+        {
+          category: "Frontend",
+          items: ["React", "Next.js", "TypeScript"],
+        },
+        {
+          category: "Analytics",
+          items: ["A/B Testing", "Conversion Rate Optimization", "User Behavior Analytics"],
+        },
+      ],
+      technologies: [
+        "Conversion Rate Optimization",
+        "User Experience Design",
+        "A/B Testing",
+        "Data Analytics",
+        "Trust & Safety",
+      ],
+      links: [
+        { type: "Website", href: "https://case-studies-blogs.vercel.app/blog/airbnb-booking-conversion" },
+      ],
+      image: "/airbnb-conversion.webp",
+      video: "",
+    },
+    {
+      title: "Airbnb's Crisis Roadmap: How to Prioritize When Everything Changes Overnight",
+      href: "https://case-studies-blogs.vercel.app/blog/airbnb-roadmap-downturn",
+      dates: "December 27, 2024",
+      active: true,
+      description:
+        "Inside Airbnb's product strategy during COVID-19 - a masterclass in crisis roadmapping and adaptive product leadership",
+      detailedDescription:
+        "Analysis of how Airbnb pivoted its product strategy during the COVID-19 pandemic. This case study explores the decision-making process, feature prioritization, and strategic shifts that allowed Airbnb to survive and eventually thrive during unprecedented market changes.",
+      features: [
+        "Crisis response strategy",
+        "Feature prioritization frameworks",
+        "Market adaptation techniques",
+        "Customer segment pivoting",
+        "Revenue model adjustments",
+      ],
+      techStack: [
+        {
+          category: "Product Management",
+          items: ["Roadmapping", "Analytics", "A/B Testing"],
+        },
+        {
+          category: "Strategy",
+          items: ["Market Analysis", "Customer Research", "Competitive Analysis"],
+        },
+      ],
+      technologies: [
+        "Product Strategy",
+        "Crisis Management",
+        "Market Adaptation",
+        "Customer Research",
+        "Business Model Innovation",
+      ],
+      links: [
+        { type: "Website", href: "https://case-studies-blogs.vercel.app/blog/airbnb-roadmap-downturn" },
+      ],
+      image: "/airbnb-downturn.webp",
+      video: "",
+    },
+    {
+      title: "Atlassian Intelligence: AI Embedded in Team Workflows",
+      href: "https://case-studies-blogs.vercel.app/blog/atlassian-intelligence-ai-workflows",
+      dates: "December 27, 2024",
+      active: true,
+      description:
+        "How Atlassian embedded AI directly into Jira, Confluence, and team workflows to accelerate productivity without context switching",
+      detailedDescription:
+        "Deep dive into Atlassian's approach to integrating AI into existing team workflows. This case study explores how Atlassian embedded AI capabilities directly into Jira, Confluence, and other tools to enhance productivity without disrupting established workflows.",
+      features: [
+        "AI integration in existing workflows",
+        "Context-aware AI assistance",
+        "Productivity enhancement without disruption",
+        "Seamless AI adoption",
+        "Workflow optimization",
+      ],
+      techStack: [
+        {
+          category: "AI & ML",
+          items: ["Natural Language Processing", "Machine Learning", "Contextual AI"],
+        },
+        {
+          category: "Platform",
+          items: ["Jira", "Confluence", "Atlassian Ecosystem"],
+        },
+      ],
+      technologies: [
+        "AI Integration",
+        "Natural Language Processing",
+        "Workflow Automation",
+        "Productivity Tools",
+        "Contextual AI",
+      ],
+      links: [
+        { type: "Website", href: "https://case-studies-blogs.vercel.app/blog/atlassian-intelligence-ai-workflows" },
+      ],
+      image: "/atlassian-intelligence.webp",
+      video: "",
+    },
+    {
+      title: "Gamma: AI That Designs Beautiful Presentations Instantly",
+      href: "https://case-studies-blogs.vercel.app/blog/gamma-ai-presentation-design",
+      dates: "December 27, 2024",
+      active: true,
+      description:
+        "How Gamma uses AI to transform ideas into polished presentations without the pain of traditional slide design",
+      detailedDescription:
+        "Analysis of Gamma's AI-powered presentation platform. This case study explores how Gamma transforms text-based ideas into professionally designed presentations using AI, eliminating the time-consuming process of traditional slide design.",
+      features: [
+        "AI-powered presentation generation",
+        "Text-to-presentation conversion",
+        "Automated design optimization",
+        "Professional layout generation",
+        "Content-to-visual transformation",
+      ],
+      techStack: [
+        {
+          category: "AI & ML",
+          items: ["Generative AI", "Natural Language Processing", "Computer Vision"],
+        },
+        {
+          category: "Design",
+          items: ["Automated Design", "Layout Optimization", "Visual Generation"],
+        },
+      ],
+      technologies: [
+        "Generative AI",
+        "Presentation Tools",
+        "Automated Design",
+        "Natural Language Processing",
+        "Computer Vision",
+      ],
+      links: [
+        { type: "Website", href: "https://case-studies-blogs.vercel.app/blog/gamma-ai-presentation-design" },
+      ],
+      image: "/gamma-presentations.webp",
+      video: "",
+    },
+    {
+      title: "GitHub Copilot: How AI Became a Developer's Pair Programmer",
+      href: "https://case-studies-blogs.vercel.app/blog/github-copilot-ai-pair-programmer",
+      dates: "December 27, 2024",
+      active: true,
+      description:
+        "Inside GitHub Copilot's product strategy - from context-aware AI to billion-dollar ARR through developer productivity",
+      detailedDescription:
+        "Deep analysis of GitHub Copilot's product strategy and journey to billion-dollar ARR. This case study examines how GitHub transformed AI code completion into a product that functions as a developer's pair programmer, increasing productivity and changing how developers work.",
+      features: [
+        "Context-aware code completion",
+        "AI pair programming",
+        "Developer productivity enhancement",
+        "Code quality improvement",
+        "Learning from public code",
+      ],
+      techStack: [
+        {
+          category: "AI & ML",
+          items: ["OpenAI Codex", "Machine Learning", "Natural Language Processing"],
+        },
+        {
+          category: "Development",
+          items: ["VS Code Integration", "IDE Tools", "Code Analysis"],
+        },
+      ],
+      technologies: [
+        "AI Code Completion",
+        "Developer Tools",
+        "Machine Learning",
+        "Natural Language Processing",
+        "IDE Integration",
+      ],
+      links: [
+        { type: "Website", href: "https://case-studies-blogs.vercel.app/blog/github-copilot-ai-pair-programmer" },
+      ],
+      image: "/github-copilot.webp",
+      video: "",
+    },
+  ],
   currentlyWorkingOn: {
     title: "HRMS Product Enhancement",
     description: "Leading ongoing enhancements to HRMS platform including advanced attendance analytics, automated compliance reporting, and AI-powered leave prediction to reduce approval bottlenecks and improve employee experience.",

@@ -24,7 +24,7 @@ interface Props {
   image?: string;
   video?: string;
   links?: readonly {
-    icon: React.ReactNode;
+    icon?: React.ReactNode;
     type: string;
     href: string;
   }[];
@@ -51,19 +51,31 @@ export function ProjectCard({
   features,
   techStack,
 }: Props) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleCardClick = () => {
-    setIsModalOpen(true);
+  const handleCardClick = (e: React.MouseEvent) => {
+    // Only open the main link if the click wasn't on one of the project links in the footer
+    if (link && !(e.target as Element).closest('a')) {
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
   };
 
   return (
-    <>
+    <div
+      className="cursor-pointer"
+      onClick={handleCardClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          if (link) {
+            window.open(link, "_blank", "noopener,noreferrer");
+          }
+        }
+      }}
+      role="button"
+      tabIndex={0}
+    >
       <Card
         className={
-          "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full cursor-pointer"
+          "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
         }
-        onClick={handleCardClick}
       >
         <div className={cn("block", className)}>
           {video && (
@@ -88,7 +100,9 @@ export function ProjectCard({
         </div>
         <CardHeader className="px-2">
           <div className="space-y-1">
-            <CardTitle className="mt-1 text-base">{title}</CardTitle>
+            <CardTitle className="mt-1 text-base cursor-pointer hover:underline">
+              {title}
+            </CardTitle>
             <time className="font-sans text-xs">{dates}</time>
             <div className="hidden font-sans text-xs underline print:visible">
               {link?.replace("https://", "").replace("www.", "").replace("/", "")}
@@ -116,38 +130,24 @@ export function ProjectCard({
         <CardFooter className="px-2 pb-2">
           {links && links.length > 0 && (
             <div className="flex flex-row flex-wrap items-start gap-1">
-              {links?.map((link, idx) => (
-                <Link
-                  href={link?.href}
+              {links?.map((projectLink, idx) => (
+                <a
+                  href={projectLink?.href}
                   key={idx}
                   target="_blank"
+                  rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
-                    {link.icon}
-                    {link.type}
+                    {projectLink.icon}
+                    {projectLink.type}
                   </Badge>
-                </Link>
+                </a>
               ))}
             </div>
           )}
         </CardFooter>
       </Card>
-
-      <ProjectDetailModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        project={{
-          title,
-          dates,
-          description,
-          detailedDescription,
-          technologies: tags,
-          links,
-          features,
-          techStack,
-        }}
-      />
-    </>
+    </div>
   );
 }

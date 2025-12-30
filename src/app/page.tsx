@@ -129,30 +129,6 @@ export default function Page() {
           initialVisibleCount={3}
         />
       </section>
-      <section id="frontend-showcase">
-        <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 10}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="font-kalam font-medium underline underline-offset-6 text-lg">
-                  <Highlighter action="underline" color="#FF9800">
-                    Featured Work
-                  </Highlighter>
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Frontend Applications
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Production-ready web applications built with modern technologies
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 10.5}>
-            <FrontendShowcase projects={DATA.frontendProjects} />
-          </BlurFade>
-        </div>
-      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -160,41 +136,54 @@ export default function Page() {
               <div className="space-y-2">
                 <div className="font-kalam font-medium underline underline-offset-6 text-lg">
                   <Highlighter action="underline" color="#FF9800">
-                   My Projects
+                   Case Studies
                  </Highlighter>
                  </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  Real-World Product Challenges
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                    Explore real-world product management challenges I&apos;ve analyzed,
+      from feature development to user experience improvements and data-driven decisions.
                 </p>
               </div>
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
+            {DATA.caseStudies.map((caseStudy, id) => (
               <BlurFade
-                key={project.title}
+                key={caseStudy.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
                 <ProjectCard
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                  detailedDescription={project.detailedDescription}
-                  features={project.features}
-                  techStack={project.techStack}
+                  key={caseStudy.title}
+                  title={caseStudy.title}
+                  description={caseStudy.description}
+                  dates={caseStudy.dates}
+                  tags={caseStudy.technologies}
+                  link={caseStudy.href} // Use the href field as the main link
+                  image={caseStudy.image}
+                  video={caseStudy.video}
+                  links={[]} // Pass empty array to avoid showing the website badge
+                  detailedDescription={caseStudy.detailedDescription}
+                  features={caseStudy.features}
+                  techStack={caseStudy.techStack}
                 />
               </BlurFade>
             ))}
+          </div>
+          <div className="mt-6 flex justify-center">
+            <BlurFade delay={BLUR_FADE_DELAY * 15}>
+              <a
+                href="https://case-studies-blogs.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                  View More
+                </button>
+              </a>
+            </BlurFade>
           </div>
         </div>
       </section>
